@@ -1,7 +1,8 @@
 # Summary
 
 * [Introduction](README.md)
-* [sass-install](chapter1.md)
-* [from-css-sass](from-css-sass.md)
-* [grunt-sass-simple-way](grunt-sass-simple-way.md)
+* [SASS 環境安裝](install-sass.md)
+* [從 CSS 到 SASS](from-css-sass.md)
+* [SASS 秘辛](more-sass.md)
+* [用 Gulp 編譯 SASS](grunt-sass-simple-way.md)
 
