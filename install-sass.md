@@ -1,6 +1,6 @@
-# SASS 環境安裝
+# Sass 環境安裝
 
-SASS 由 Ruby 開發而成，針對不同作業系統有不同的安裝方式：
+Sass 由 Ruby 開發而成，針對不同作業系統有不同的安裝方式：
 
 #### MAC
 
@@ -28,13 +28,13 @@ sudo su -c "gem install sass"
 
 #### Windows
 
-你可以透過 [Ruby Installer](http://rubyinstaller.org) 快速安裝 Ruby 與 SASS。
+你可以透過 [Ruby Installer](http://rubyinstaller.org) 快速安裝 Ruby 與 Sass。
 
 ---
 
 ## LibSass
 
-LibSass 讓你可以用不同程式語言來編寫 SASS，你可以使用自己熟悉的語言與環境來增加開發效率。
+LibSass 讓你可以用不同程式語言來編寫 Sass，你可以使用自己熟悉的語言與環境來增加開發效率。
 
 更多資訊參考：[http://sass-lang.com/libsass]()
 
