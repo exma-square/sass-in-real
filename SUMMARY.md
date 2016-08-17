@@ -5,5 +5,6 @@
 * [從 CSS 到 SASS](from-css-sass.md)
 * [SASS 秘辛](more-sass.md)
 * [用 Gulp 編譯 SASS](gulp-sass.md)
+* [實作：用 Sass 來抓寶吧！](sass-exercise.md)
 * [學習資源](resources.md)
 

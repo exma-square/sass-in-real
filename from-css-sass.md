@@ -75,8 +75,4 @@ Sass 省略大括號與分號，並透過縮排來定義子元素，語法十分
 
 Scss 寫法類似 CSS，保留大括號與分號，但多了巢狀結構。
 
-試試看吧！
-
-The Sass Playground：[http:\/\/www.sassmeister.com\/](http://www.sassmeister.com/)
-
 
