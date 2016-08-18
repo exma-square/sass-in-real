@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="pokeball poke"><div class="pokeball-btn"></div></div>
+
+      <div class="pokeball great">
+        <div class="pokeball-btn"></div>
+        <div class="pattern left"></div>
+        <div class="pattern right"></div>
+      </div>
+
+      <div class="pokeball ultra">
+        <div class="pokeball-btn"></div>
+        <div class="pattern top"></div>
+        <div class="pattern bottom"></div>
+      </div>
+
+      <div class="pokeball fixed master">
+        <div class="pokeball-btn"></div>
+        <div class="pattern left"></div>
+        <div class="pattern right"></div>
+        <span>M</span>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+    <script>
+      $( ".pokeball" ).mouseover(function() {
+        $(this).addClass('animated swing');
+      });
+      $('.pokeball').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+        $(this).removeClass('animated swing');
+      });
+    </script>
+  </body>
+</html>
