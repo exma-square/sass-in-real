@@ -1,0 +1,136 @@
+@import 'variables';
+@import 'mixin';
+
+body {
+  background-color: #f5f5f5;
+}
+
+*:before, *:after {
+  content:"";
+  position: absolute;
+}
+
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 552px;
+  transform: translate(-50%,-50%);
+}
+
+.pokeball {
+  @include border-radius(50%);
+  @include size(200px, 200px);
+
+  float: left;
+  overflow: hidden;
+  position: relative;
+  z-index:1;
+  margin: 30px;
+  border: 8px solid $color-gray;
+  box-shadow: inset -10px 10px 0 10px #ccc;
+
+  &.fixed{
+    overflow: visible;
+  }
+
+  .pokeball-btn{
+    @include border-radius(50%);
+    @include size(62px, 62px);
+
+    background-color: white;
+    border: 5px solid $color-gray;
+    position: absolute;
+    margin: 64px;
+
+    &::after {
+      @include border-radius(50%);
+      @include size(38px, 38px);
+      background-color: $color-gray + 111;
+      border: 5px solid $color-gray;
+      margin: 7px;
+    }
+  }
+
+  &.poke {
+    &::before{
+      @include ball-wrapper($color-poke)
+    }
+  }
+  
+  &.great {
+    &::before{
+      @include ball-wrapper($color-great)
+    }
+    
+    .pattern {
+      @include size(33px,0);
+      position: absolute;
+			border-top: 80px solid $color-poke;
+			border-right: 30px solid transparent;
+			border-left: 30px solid transparent;
+      margin: -3px 0 0 -10px;
+
+      &.left {
+        transform: rotate(-45deg);
+      }
+      &.right {
+        margin-left: 115px;
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+  &.ultra {
+    &::before{
+      @include ball-wrapper($color-ultra)
+    }
+
+    .pattern{
+      position: absolute;
+      &.top {
+        @include size(200px, 40px);
+        background-color: $color-yellow;
+      }
+      &.bottom {
+        @include size(110px, 50px);
+        border-right: 25px solid $color-yellow;
+        border-left: 25px solid $color-yellow;
+        top: 40px;
+        left: 20px;
+      }
+    }
+  }
+
+  &.master {
+    &::before{
+      @include ball-wrapper($color-master)
+    }
+    
+    span {
+      position: absolute;
+      left: 82px;
+      color: white;
+      font-size: 38px;
+      line-height: 80px;
+    }
+
+    .pattern{
+      @include border-radius(20px unquote("/") 50px);
+      @include size(20px, 70px);
+
+      background-color: $color-purple;
+      border: 8px solid $color-gray;
+      position: absolute;
+      margin: -10px 0 0 8px;
+       
+      &.left {
+        transform: rotate(40deg);
+      }
+      &.right {
+        transform: rotate(-40deg);
+        margin-left: 158px;
+      }
+    }
+  }
+}
