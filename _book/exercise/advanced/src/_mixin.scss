@@ -1,0 +1,18 @@
+// Mixins
+@mixin border-radius($radius){
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin ball-wrapper($color) {
+  @include border-radius(100px 100px 0 0);
+  @include size(200px, 90px);
+  background-color: $color;
+  border-bottom: 20px solid $color-gray;
+}

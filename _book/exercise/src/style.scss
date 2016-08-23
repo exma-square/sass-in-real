@@ -1,0 +1,61 @@
+@import 'variables';
+@import 'mixin';
+
+body {
+  background-color: #f5f5f5;
+}
+
+*:before, *:after {
+  content:"";
+  position: absolute;
+}
+
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.pokeball {
+  @include border-radius(50%);
+  @include size(200px, 200px);
+
+  float: left;
+  overflow: hidden;
+  position: relative;
+  margin: 30px;
+  border: 8px solid $color-gray;
+  box-shadow: inset -10px 10px 0 10px #ccc;
+
+  .pokeball-btn{
+    @include border-radius(50%);
+    @include size(62px, 62px);
+    position: absolute;
+    border: 5px solid $color-gray;
+    background-color: white;
+    margin: 64px;
+
+    &::after {
+      @include border-radius(50%);
+      @include size(38px, 38px);
+      content:"";
+	    position: absolute;
+      border: 5px solid $color-gray;
+      background-color: $color-gray + 111;
+      margin: 7px;
+    }
+  }
+
+  &.red {
+    &::before{
+      @include ball-wrapper($color-red)
+    }
+  }
+
+  &.blue {
+    &::before{
+      @include ball-wrapper($color-blue)
+    }
+  }
+}
