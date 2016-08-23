@@ -1,0 +1,23 @@
+{
+  "name": "responsive-css-dojo",
+  "version": "1.0.0",
+  "description": "多重載具的時代，人們漸漸將手持裝置取代桌上型攜帶型電腦，甚至已經改變瀏覽的習慣。對於網頁開發者來說多重載具是一個現在進行式，舊有的固定寬度， table 排版，圖片的載入，甚至是表單的呈現都需要思考不同載具的呈現面，讓使用者如何在不同裝置不同螢幕尺寸上方便使用， Responsive 絕對是現代網頁開發者必要的基礎能力，這場 Responsive 除了基本尺寸觀念之外，再將幾個 Responsive 必要觀點帶給各位。",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd _book && ../node_modules/.bin/noder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exma-square/rwd-in-real.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/exma-square/rwd-in-real/issues"
+  },
+  "homepage": "https://github.com/exma-square/rwd-in-real#readme",
+  "dependencies": {
+    "noder": "0.0.12"
+  }
+}
